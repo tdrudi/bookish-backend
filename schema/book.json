@@ -1,0 +1,29 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/userAuth.json",
+    "type": "object",
+    "properties": {
+        "olid": {
+            "type": "integer"
+        },
+        "title": {
+            "type": "string"
+        },
+        "author": {
+            "type": "string"
+        },
+        "cover_url": {
+            "type": "string",
+            "format": "uri"
+        },
+        "description": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "olid",
+        "title",
+        "author"
+    ],
+    "additionalProperties": false
+}

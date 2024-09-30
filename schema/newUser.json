@@ -1,0 +1,42 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/userAuth.json",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "username": {
+            "type": "string"
+        },
+        "password": {
+            "type": "string",
+            "minLength": 6
+        },
+        "email": {
+            "type": "string",
+            "format": "email"
+        },
+        "first_name": {
+            "type": "string"
+        },
+        "last_name": {
+            "type": "string"
+        },
+        "is_admin": {
+            "type": "boolean"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": [
+        "username",
+        "password",
+        "email",
+        "first_name",
+        "last_name"
+    ],
+    "additionalProperties": false
+}

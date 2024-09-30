@@ -1,0 +1,39 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/userAuth.json",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "user_id": {
+            "type": "integer"
+        },
+        "follower_id": {
+            "type": "integer"
+        },
+        "status": {
+            "type": "string",
+            "enum": [
+                "pending",
+                "accepted",
+                "declined",
+                "blocked"
+            ]
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time"
+        },
+        "updated_at": {
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": [
+        "user_id",
+        "follower_id",
+        "status"
+    ],
+    "additionalProperties": false
+}

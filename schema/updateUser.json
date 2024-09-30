@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/userAuth.json",
+    "type": "object",
+    "properties": {
+        "username": {
+            "type": "string"
+        },
+        "password": {
+            "type": "string",
+            "minLength": 5,
+            "maxLength": 20
+        },
+        "email": {
+            "type": "string",
+            "minLength": 6,
+            "maxLength": 60,
+            "format": "email"
+        },
+        "first_name": {
+            "type": "string"
+        },
+        "last_name": {
+            "type": "string"
+        },
+        "profile_img_url": {
+            "type": "string"
+        }
+    },
+    "required": [],
+    "additionalProperties": false
+}

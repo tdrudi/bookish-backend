@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/reviewSchema.json",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer"
+        },
+        "book_id": {
+            "type": "integer"
+        },
+        "user_id": {
+            "type": "integer"
+        },
+        "review_text": {
+            "type": "string"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time"
+        }
+    },
+    "required": [
+        "book_id",
+        "user_id"
+    ],
+    "additionalProperties": false
+}
