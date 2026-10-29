@@ -17,7 +17,7 @@ Bookish is a full-stack web application designed for avid readers to organize th
 - Testing: Jest and Supertest
 
 ## Project Structure
-bookish-backend/
+```bookish-backend/
 |--helpers/             # Generate dynamic SQL update queries, JWT generation and verification
 |--middleware/          # Middleware for authenticating users and verifying permissions
 |--models/              # Models for SQL queries and tests for models
@@ -28,7 +28,7 @@ bookish-backend/
 |--db.js                # PostgreSQL connection setup
 |--server.js            # Server setup
 |__config.js            # Centralized configuration and enviornment variables
-
+```
 ## Getting Started
 1. Clone the repository:
     git clone https://github.com/tdrudi/bookish-backend.git
