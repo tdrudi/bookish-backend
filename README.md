@@ -17,7 +17,8 @@ Bookish is a full-stack web application designed for avid readers to organize th
 - Testing: Jest and Supertest
 
 ## Project Structure
-```bookish-backend/
+```
+bookish-backend/
 |--helpers/             # Generate dynamic SQL update queries, JWT generation and verification
 |--middleware/          # Middleware for authenticating users and verifying permissions
 |--models/              # Models for SQL queries and tests for models
@@ -31,28 +32,39 @@ Bookish is a full-stack web application designed for avid readers to organize th
 ```
 ## Getting Started
 1. Clone the repository:
-    git clone https://github.com/tdrudi/bookish-backend.git
-    cd bookish-backend
+```
+git clone https://github.com/tdrudi/bookish-backend.git
+cd bookish-backend
+```
    
 2. Install dependencies
-    npm install
+```
+npm install
+```
    
-3. Set up database:
-    psql < bookish.sql
-    psql < bookish-schema.sql
-
+4. Set up database:
+```
+psql < bookish.sql
+psql < bookish-schema.sql
+```
 4. Create .env file:
-    PORT=3001
-    SECRET_KEY = your_secret_key_here
-    DATABASE_URL = postgresql://bookish
+```
+PORT=3001
+SECRET_KEY = your_secret_key_here
+DATABASE_URL = postgresql://bookish
+```
 
    Note: For running tests, ensure a bookish_test database is also available.
 
 5. Run the server:
-    npm start
+```
+npm start
+```
 
 6. Running tests:
-    npm test
+```
+npm test
+```
 
 
 ## Core Models
